@@ -1,0 +1,106 @@
+body  {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1  {
+  background-image: url("oven.jpeg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-size: 60pt;
+}
+h2 {
+  text-align: center;
+  font-size: 28pt;
+  text-decoration: underline;
+}
+nav {
+   color: white;
+   padding-top: 0px;
+   padding-right: 0px;
+   background-color: black;
+   background-size: 15px;
+   position: sticky;
+}
+nav a:hover {
+  background-color: orange;
+  color: white;
+}
+nav a.active {
+  background-color: yellow;
+  color: white;
+}
+a:active {
+  color: white;
+}
+li {
+  display: inline;
+  float: left;
+  color: white;
+  border-right:1px solid #bbb;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li:last-child {
+  border-right: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20pt;
+    color: white;
+  }
+.column-layout {
+  display: flex;
+  flex-basis: 20%;
+  flex-wrap: wrap;
+}
+.col {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  border: 1px black solid;
+  flex-basis: 20%;
+  filter: drop-shadow(5px 5px 10px rgb(51,51,51));
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  background-size: 300px;
+  font-size: 18pt;
+}
+.cheech {
+  float: left;
+}
+.orderh1 {
+  background-image: url("neon.jpeg");
+}
+.container {
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
+}
+.testimonial {
+  border:1px black solid;
+  font-size: 18pt;
+
+}
+@media only screen and (max-width:578px) {
+  .col {
+    display: block;
+    width:100%;
+    }
+  }

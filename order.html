@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Chase Davidson 2/20/2021
+      Cheech's Pizza Flex Box -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <title>Order Here</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="location.html">Location</a></li>
+          <li style="float:right"><a href="order.html"> Order Now: 417-123-4567</a></li>
+      </ul>
+    </nav>
+    <div class="orderh1">
+      <img src="neon.jpeg" alt="neon">
+    </div>
+    <div class="container">
+      <form action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Order Information</legend>
+            <label for="fname">
+              Name:
+              <input type="text" id="fname" name="fname" required placeholder="First Name"/>
+            </label>
+            <label for="lname">
+              Last Name:
+              <input type="text" id="lname" name="lname" required placeholder="Last Name"/>
+            </label>
+            <label for="email">
+              Email:
+              <input type="text" id="email"  name="email" required placeholder="yourEmail@Example.com"/>
+            </label>
+            <label for="phone">
+              Phone:
+              <input type="text" id="phone"  name="phone" required placeholder="XXX-XXX-XXXX"/>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Specialty Pizza</legend>
+            <select name="Pizzas" id="pizzas">
+                <option value="Supreme">Supreme</option>
+                <option value="4x4">4x4</option>
+                <option value="Taco Style">Taco Style</option>
+                <option value="Cheese">Cheese</option>
+                <option value="Hawaiian">Hawaiian</option>
+                <option value="Pepperoni">Pepperoni</option>
+              </select>
+              <label for="Quantity"></label>
+                <input type="number" id="Quantity" name="Quantity" min="1" max="50" placeholder="1" >
+                <input type="radio" id="cheese" name="cheese" value="cheese">
+                  <label for="cheese">Parmesean</label>
+                  <input type="radio" id="pepper" name="pepper" value="pepper">
+                  <label for="pepper">Crushed Red Pepper</label>
+          </fieldset>
+          <input class="place" type="submit" value="Place Order" />
+
+          </form>
+        </div>
+        <div class="col">
+          <img src="stars.png" alt="5stars" width="200" height="100">
+          <h3>Derrick Henry <br> Nashville, TN</h3>
+          <p>This place is great! Atmosphere is chill and cool but the staff is also really friendly.
+            They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority.
+             Food is Amazing, some italian classics and some twists, and for their prices it’s 100% worth it.</p>
+        </div>
+        <div class="col">
+          <img src="stars.png" alt="5stars" width="200" height="100">
+          <h3>AJ Brown <br> Oxford, MS</h3>
+          <p>This is my absolute favorite restaurant in Oxford. The food is always fantastic and no matter what I order I am always delighted
+            with my meal! Servers are also great and always efficient, happy and polite. Can’t wait to return and wouldn’t hesitate to recommend to
+             anyone looking for somewhere to eat in Oxford.</p>
+        </div>
+        <div class="col">
+          <img src="stars.png" alt="5stars" width="200" height="100">
+          <h3>Ryan Tannehill<br> College Station, TX</h3>
+          <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert.
+             I recommend to everyone! I would like to come back here again and again.</p>
+        </div>
+
+        <footer> Cheech's 123 Main St. Downtown Somewhere <br>
+        Phone 417-123-4567 <br> Monday - Thursday 11:00 AM - 10:00PM <br> Friday - Saturday 11:00AM - 12:00AM <br> Sunday - 11:00AM - 8:00PM </footer>
+</html>
